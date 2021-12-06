@@ -31,7 +31,7 @@
                 <td><form:input path="phoneNo" /></td>
             </tr>
             <tr>
-                <td colspan="2" align="center"><input type="submit" value="Save"></td>
+                <td colspan="2" align="center"><input type="submit" value="Update"></td>
             </tr>
         </table>
         </form:form>

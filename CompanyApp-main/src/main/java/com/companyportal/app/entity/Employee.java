@@ -1,11 +1,30 @@
 package com.companyportal.app.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
 public class Employee {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "id")
 	private Integer employeeId;
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "project_status")
 	private String project;
+	
+	@Column(name = "email_id", unique = true)
 	private String mailId;
+	
+	@Column(name = "phone_number", unique = true)
 	private String phoneNo;
 	
 	public Integer getEmployeeId() {
@@ -38,4 +57,12 @@ public class Employee {
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
 	}
+	
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", name=" + name + ", project=" + project + ", mailId=" + mailId
+				+ ", phoneNo=" + phoneNo + "]";
+	}
+	
+	
 }
