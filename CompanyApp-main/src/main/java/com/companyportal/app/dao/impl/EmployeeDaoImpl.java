@@ -7,17 +7,12 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import javax.transaction.Transactional;
 
 import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
-import org.hibernate.search.FullTextSession;
-import org.hibernate.search.Search;
-import org.hibernate.search.query.dsl.QueryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +20,6 @@ import org.springframework.stereotype.Repository;
 
 import com.companyportal.app.dao.EmployeeDao;
 import com.companyportal.app.entity.Employee;
-import com.companyportal.app.service.impl.EmployeeServiceImpl;
 
 @Repository
 public class EmployeeDaoImpl implements EmployeeDao {
@@ -33,6 +27,25 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;
+	
+	@Override
+	public void saveOrUpdateEmployee(Employee employee) {
+		logger.info(getClass() +":" +employee.toString() + " : Details are saved");
+		Session session = null;
+		try {
+			session = sessionFactory.openSession();
+			session.beginTransaction();
+			session.saveOrUpdate(employee);
+			session.getTransaction().commit();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			session.getTransaction().rollback();
+			logger.info(employee.toString() + " : Employee not saved due to Exception" + ":\t" + e.getLocalizedMessage());
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
 
 	@Override
 	public void saveEmployeeData(Employee employee) {
@@ -55,6 +68,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> getEmployeesData() {
+		logger.info(getClass() +":" +"Getting employees..");
 		Session session = null;
 		List<Employee> empList = new ArrayList<Employee>();
 		try {
@@ -62,11 +76,29 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			empList = session.createQuery("From Employee").list();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			logger.info("Getting employees.." + e.getMessage());
 		} finally {
 			session.close();
 		}
 		
 		return empList;
+	}
+	
+	@Override
+	public Employee getEmployeeById(Integer employeeId) {
+		logger.info(getClass() +":" +"Getting employee for " + employeeId);
+		Session session = null;
+		Employee employee = new Employee();
+		try {
+			session = sessionFactory.openSession();
+			employee = session.find(Employee.class, employeeId);			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			logger.info("Getting employee for " + employeeId + "\t:" + e.getMessage());
+		} finally {
+			session.close();
+		}
+		return employee;
 	}
 
 	@Override
@@ -87,7 +119,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public void deleteEmployeeData(Integer employeeId) {
-		// employeeList.removeIf(e -> e.getEmployeeId() == employeeId);
+		logger.info(getClass() +":" +"Deleting employee " + employeeId);
 		Employee emp = new Employee();
 		emp.setEmployeeId(employeeId);
 		Session session = null;
@@ -99,6 +131,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			session.getTransaction().rollback();
+			logger.info("Deleting employee " + employeeId + "\t:" + e.getMessage());
 		} finally {
 			session.close();
 		}
@@ -107,6 +140,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> findEmployeeLike(String likeStr) {
+		logger.info(getClass() +":" +"Fetching employees like " + likeStr);
 		List<Employee> employees = new ArrayList<Employee>();
 		Session session = null;
 		try {
@@ -119,6 +153,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			Query<Employee> query = session.createQuery(likeQuery);
 			employees = query.getResultList();			
 		} catch (Exception e) {
+			logger.info("Fetching employees like " + likeStr + ":\t" + e.getLocalizedMessage());
 			System.out.println(e.getMessage());
 		} finally {
 			session.close();
@@ -129,6 +164,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> searchEmployeeData(String searchText) {
+		logger.info(getClass() +":" +"Fetching employees like " + searchText);
 		List<Employee> results = new ArrayList<>();
 		Session session = null;
 		try {
@@ -141,6 +177,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			results = criteriaLike.list();
 			results.stream().forEach(System.out::println);
 		} catch (Exception e) {
+			logger.info("Fetching employees like " + searchText + ":\t" + e.getLocalizedMessage());
 			System.out.println(e.getMessage());
 		} finally {
 			session.close();

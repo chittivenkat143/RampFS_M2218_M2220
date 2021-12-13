@@ -10,13 +10,17 @@
 </head>
 <body>
 <div align="center">
-        <h1>New/Edit Employee</h1>
+        <h1>Update Employee</h1>
         <form:form action="saveData" method="post" modelAttribute="employee">
         <table>
             <form:hidden path="employeeId"/>
             <tr>
                 <td>Name:</td>
                 <td><form:input path="name" /></td>
+            </tr>
+            <tr>
+                <td>Employee Code:</td>
+                <td><form:input path="code" /></td>
             </tr>
             <tr>
                 <td>Project Details:</td>
@@ -30,8 +34,11 @@
                 <td>Phone Number:</td>
                 <td><form:input path="phoneNo" /></td>
             </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" value="Update"></td>
+            <tr align="center">
+                <td colspan="2" >
+                	<input type="submit" value="Update"/>               
+                	<a href="/app/employeelist"><input type="button" value="Cancel"/></a>
+                </td>
             </tr>
         </table>
         </form:form>

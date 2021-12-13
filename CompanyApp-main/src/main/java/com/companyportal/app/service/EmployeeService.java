@@ -6,7 +6,7 @@ import com.companyportal.app.entity.Employee;
 
 public interface EmployeeService {
 
-	public void saveEmployeeData(Employee employee);
+	public void saveOrUpdateEmployee(Employee employee);
 
 	public List<Employee> getEmployeesData();
 

@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,7 +39,7 @@ public class EmployeeController {
 	@RequestMapping(value = "/saveData", method = RequestMethod.POST)
 	public String saveEmployeeData(@ModelAttribute("employee") Employee employee) {
 		logger.info("Adding new Employee");
-		employeeService.saveEmployeeData(employee);
+		employeeService.saveOrUpdateEmployee(employee);
 		return "redirect:/employeelist";
 	}
 	
@@ -56,6 +57,19 @@ public class EmployeeController {
 		Employee emp = employeeService.findEmployeeById(employeeId);
 		model.addAttribute("employee", emp);
 		return "editemployee";
+	}
+	
+	@RequestMapping(value = "/employeeActivities", method = RequestMethod.GET)
+	public String viewEmployeeActivities(@RequestParam("employeeId") Integer employeeId, Model model) {
+		logger.info("View Employee Activities of" + employeeId);
+		Employee emp = employeeService.findEmployeeById(employeeId);
+		model.addAttribute("employee", emp);
+		if(emp.getActivities().size() > 0) {
+			model.addAttribute("activities", emp.getActivities());
+		}else {
+			model.addAttribute("info", "No Activities Found");
+		}
+		return "ViewEmpActivities";
 	}
 	
 	@RequestMapping(value = "/deleteEmployee/{employeeId}", method = RequestMethod.GET)
@@ -104,5 +118,11 @@ public class EmployeeController {
 		model.addAttribute("employee", new Employee());
 		model.addAttribute("exception", exception);
 		return "employeeform";
+	}
+	
+	@GetMapping(value = "/getEmpRq")
+	@ResponseBody
+	public Employee getEmployeeResponseBody() {
+		return employeeService.findEmployeeById(2);
 	}
 }

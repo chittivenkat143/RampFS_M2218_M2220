@@ -37,10 +37,12 @@
 			<table class="table" id="employeeList">
 				<thead>
 					<tr>
+						<th>Employee Code</th>
 						<th>Name</th>
 						<th>ProjectDetails</th>
 						<th>Mail Id</th>
 						<th>Phone number</th>
+						<th>View Activities</th>
 						<th>Edit</th>
 						<th>Delete</th>
 					</tr>
@@ -50,10 +52,16 @@
 				  <c:when test="${employeeList.size() > 0}">
 				    <c:forEach items="${employeeList}" var="emp">
 						<tr>
+							<td>${emp.code}</td>
 							<td>${emp.name}</td>
 							<td>${emp.project}</td>
 							<td>${emp.mailId}</td>
 							<td>${emp.phoneNo}</td>
+							<td>
+								<button type="button" class="btn">
+									<a href="employeeActivities?employeeId=${emp.employeeId}">Activities</a>
+								</button>
+							</td>
 							<td>
 								<button type="button" class="btn">
 									<a href="updateEmployee?employeeId=${emp.employeeId}">EDIT</a>

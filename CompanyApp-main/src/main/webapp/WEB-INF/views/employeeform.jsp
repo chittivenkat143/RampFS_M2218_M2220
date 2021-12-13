@@ -27,6 +27,11 @@
                 <td><form:input path="name" value="${employee.name}"/></td>
             </tr>
             <tr>
+            <tr>
+                <td>Employee Code:</td>
+                <td><form:input path="code" value="${employee.code}" disabled="false"/></td>
+            </tr>
+            <tr>
                 <td>Project Details:</td>
                 <td><form:input path="project" value="${employee.project}"/></td>
             </tr>
@@ -39,7 +44,10 @@
                 <td><form:input path="phoneNo" value="${employee.phoneNo}"/></td>
             </tr>
             <tr>
-                <td colspan="2" align="center"><input type="submit" value="Save"></td>
+                <td colspan="2" align="center">
+                	<input type="submit" value="Save">
+                	<a href="#"><input type="button" value="Cancel"/></a>
+                </td>
             </tr>
         </table>
         </form:form>
