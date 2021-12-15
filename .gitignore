@@ -19,6 +19,17 @@ local.properties
 */target/
 Servers/
 
+###STS###
+*/target/*
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.classpath
+.project
+.settings
+
 # External tool builders
 .externalToolBuilders/
 
