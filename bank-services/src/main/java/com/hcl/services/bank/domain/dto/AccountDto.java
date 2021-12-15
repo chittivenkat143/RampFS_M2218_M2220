@@ -17,6 +17,5 @@ public class AccountDto {
 	private AccountTypeDto accountCode;
 	private CustomerDto accountCustomerId;
 	private Double accountBalance;
-	@JsonIgnore
 	private List<TransactionDto> transactions;
 }

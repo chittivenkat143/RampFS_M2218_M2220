@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.hcl.services.bank.domain.Customer;
 import com.hcl.services.bank.domain.dto.CustomerDto;
 import com.hcl.services.bank.domain.dto.projection.CustomerView;
+import com.hcl.services.bank.domain.dto.projection.CustomerViewOpenProj;
 import com.hcl.services.bank.exception.ResourceNotFoundException;
 import com.hcl.services.bank.repo.CustomerRepository;
 import com.hcl.services.bank.service.ICustomerService;
@@ -44,5 +45,11 @@ public class CustomerService implements ICustomerService {
 	public CustomerView getCustomerByCustomerMobile(String mobileNo) {
 		logger.info("CS:getCustomerDtoByCustomerMobile:\t" + mobileNo);
 		return repository.findCustomerByCustomerMobile(mobileNo);
+	}
+	
+	@Override
+	public CustomerViewOpenProj getCustomerByEmail(String email) {
+		logger.info("CS:getCustomerByEmail:\t" + email);
+		return repository.findByCustomerEmail(email);
 	}
 }

@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//@Data
+@Data
 @NoArgsConstructor
 @Entity
 @Table(name = "customer")

@@ -19,6 +19,7 @@ import com.hcl.services.bank.domain.dto.BaseResponse;
 import com.hcl.services.bank.domain.dto.CustomerDto;
 import com.hcl.services.bank.domain.dto.CustomerRequestDTO;
 import com.hcl.services.bank.domain.dto.projection.CustomerView;
+import com.hcl.services.bank.domain.dto.projection.CustomerViewOpenProj;
 import com.hcl.services.bank.exception.BaseException;
 import com.hcl.services.bank.service.ICustomerService;
 import com.hcl.services.bank.utils.AppUtils;
@@ -60,9 +61,15 @@ public class CustomerController {
 		}
 	}
 	
-	@GetMapping("/{mobileNo}")
+	@GetMapping("/mobile/{mobileNo}")
 	public BaseResponse getCustomersByCustomerType(@PathVariable String mobileNo) {
 		CustomerView customerDto = customerService.getCustomerByCustomerMobile(mobileNo);
+		return new BaseResponse(customerDto, HttpStatus.OK);
+	}
+	
+	@GetMapping("/email/{email}")
+	public BaseResponse getCustomersByEmail(@PathVariable String email) {
+		CustomerViewOpenProj customerDto = customerService.getCustomerByEmail(email);
 		return new BaseResponse(customerDto, HttpStatus.OK);
 	}
 

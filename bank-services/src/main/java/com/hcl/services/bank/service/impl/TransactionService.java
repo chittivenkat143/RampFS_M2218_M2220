@@ -159,7 +159,7 @@ public class TransactionService implements ITransactionService {
 	@Override
 	public List<TransactionDto> getTransactionsBetweenDates(TransactionRequestDateDto transactionDto) {
 		logger.info("TS:getTransactionsBetweenDates:\t" + transactionDto.getAccountNumber() +"/"+ transactionDto.getFromDate() +"/" + transactionDto.getToDate());
-		return null;//transactionRepo.findAllByTxnNumberAndBetweenDates(transactionDto.getAccountNumber(), transactionDto.getFromDate(), transactionDto.getToDate());
+		return transactionRepo.findAllByTransactionAccountNumberAndTransactionOnBetween(transactionDto.getAccountNumber(), transactionDto.getFromDate(), transactionDto.getToDate());
 	}
 
 }

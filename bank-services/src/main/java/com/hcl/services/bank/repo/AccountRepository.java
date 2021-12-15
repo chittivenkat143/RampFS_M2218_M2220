@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.AccountType;
 import com.hcl.services.bank.domain.dto.AccountDto;
+import com.hcl.services.bank.domain.dto.projection.AccountView;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Long> {
@@ -19,4 +20,5 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
 	
 	//AccountDto findByAccountId(Long accountId);
 
+	AccountView findByAccountIdAndAccountNumber(Long accountId, String accountNumber);
 }

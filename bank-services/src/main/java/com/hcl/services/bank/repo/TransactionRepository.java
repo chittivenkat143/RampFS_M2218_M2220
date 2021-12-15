@@ -27,7 +27,6 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 	@QueryHints({@QueryHint(name = "javax.persistence.lock.timeout", value = "3000")})
 	Optional<Transaction> findByTransactionNumberAndTransactionAccountNumber(String transactionNumber, String accountNumber);
 
-	//@Query("SELECT new com.hcl.services.bank.domain.dto.TransactionDto(t.transactionId, t.transactionNumber, t.transactionOn,t.transactionAmount,t.transactionType,t.transactionAccountId,t.transactionAccountNumber,t.transactionstate) FROM Transaction t WHERE t.transactionAccountNumber= :transactionAccountNumber AND t.transactionOn BETWEEN :fromDate AND :toDate")
 	//@Query("SELECT new com.hcl.services.bank.domain.dto.TransactionDto(t.transactionId, t.transactionNumber, t.transactionOn, t.transactionAmount, t.transactionType, t.transactionAccountId, t.transactionAccountNumber, t.transactionstate) FROM Transaction t WHERE t.transactionAccountNumber= :transactionAccountNumber AND t.transactionOn BETWEEN :fromDate AND :toDate")
-	//List<TransactionDto> findAllByTxnNumberAndBetweenDates(String transactionAccountNumber, Date fromDate, Date toDate);
+	List<TransactionDto> findAllByTransactionAccountNumberAndTransactionOnBetween(String transactionAccountNumber, Date fromDate, Date toDate);
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 
 import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.Transaction.State;
+import com.hcl.services.bank.domain.Transaction.TxnType;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,14 +17,13 @@ public class TransactionDto implements Serializable{
 	private String transactionNumber;
 	private Date transactionOn;
 	private Double transactionAmount;
-	private String transactionType;
+	private TxnType transactionType;
 	private Account transactionAccountId;
 	private String transactionAccountNumber;
 	private State transactionstate;
-	public TransactionDto() {}
 	
 	public TransactionDto(Long transactionId, String transactionNumber, Date transactionOn, Double transactionAmount,
-			String transactionType, Account transactionAccountId, String transactionAccountNumber,
+			TxnType transactionType, Account transactionAccountId, String transactionAccountNumber,
 			State transactionstate) {
 		this.transactionId = transactionId;
 		this.transactionNumber = transactionNumber;
@@ -67,11 +67,11 @@ public class TransactionDto implements Serializable{
 		this.transactionAmount = transactionAmount;
 	}
 
-	public String getTransactionType() {
+	public TxnType getTransactionType() {
 		return transactionType;
 	}
 
-	public void setTransactionType(String transactionType) {
+	public void setTransactionType(TxnType transactionType) {
 		this.transactionType = transactionType;
 	}
 
