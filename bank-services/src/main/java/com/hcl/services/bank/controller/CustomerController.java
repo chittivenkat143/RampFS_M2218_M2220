@@ -1,5 +1,7 @@
 package com.hcl.services.bank.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -31,9 +33,6 @@ public class CustomerController {
 	private static Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
 	@Autowired
-	private MapperHelper mapper;
-
-	@Autowired
 	private ICustomerService customerService;
 
 	@PostMapping("/saveorupdate")
@@ -43,8 +42,7 @@ public class CustomerController {
 			logger.error("CC:errors:\t" + AppUtils.getInstance().getBindingResultToStrings(errors));
 			return new BaseResponse(errors.getAllErrors(), HttpStatus.BAD_REQUEST);
 		}
-		Customer customer = mapper.toCustomerEntity(customerDto);
-		customerService.saveOrUpdateCustomer(customer);
+		Customer customer = customerService.saveOrUpdateCustomer(customerDto);
 		return new BaseResponse(customer, HttpStatus.CREATED);
 	}
 
@@ -62,8 +60,14 @@ public class CustomerController {
 	}
 	
 	@GetMapping("/mobile/{mobileNo}")
-	public BaseResponse getCustomersByCustomerType(@PathVariable String mobileNo) {
+	public BaseResponse getCustomersByCustomerMobile(@PathVariable String mobileNo) {
 		CustomerView customerDto = customerService.getCustomerByCustomerMobile(mobileNo);
+		return new BaseResponse(customerDto, HttpStatus.OK);
+	}
+
+	@GetMapping("/type/{customerType}")
+	public BaseResponse getCustomersByCustomerType(@PathVariable Integer customerType) {
+		List<CustomerView> customerDto = customerService.getCustomersByCustomerType(customerType);
 		return new BaseResponse(customerDto, HttpStatus.OK);
 	}
 	

@@ -1,5 +1,6 @@
 package com.hcl.services.bank.service.impl;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -8,12 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hcl.services.bank.domain.Customer;
-import com.hcl.services.bank.domain.dto.CustomerDto;
+import com.hcl.services.bank.domain.dto.CustomerRequestDTO;
 import com.hcl.services.bank.domain.dto.projection.CustomerView;
 import com.hcl.services.bank.domain.dto.projection.CustomerViewOpenProj;
 import com.hcl.services.bank.exception.ResourceNotFoundException;
 import com.hcl.services.bank.repo.CustomerRepository;
 import com.hcl.services.bank.service.ICustomerService;
+import com.hcl.services.bank.utils.MapperHelper;
 
 @Service
 public class CustomerService implements ICustomerService {
@@ -21,11 +23,16 @@ public class CustomerService implements ICustomerService {
 
 	@Autowired
 	private CustomerRepository repository;
+	
+	@Autowired
+	private MapperHelper mapper;
 
 	@Override
-	public void saveOrUpdateCustomer(Customer customer) {
+	public Customer saveOrUpdateCustomer(CustomerRequestDTO customerDto) {
 		logger.info("CS:saveOrUpdateCustomer");
+		Customer customer = mapper.toCustomerEntity(customerDto);
 		repository.save(customer);
+		return customer;
 	}
 
 	@Override
@@ -38,7 +45,7 @@ public class CustomerService implements ICustomerService {
 	@Override
 	public List<Customer> getCustomersByType(Integer customerType){
 		logger.info("CS:getCustomersByType:\t" + customerType);
-		return repository.findByCustomerType(customerType);
+		return Collections.emptyList();//repository.findByCustomerType(customerType);
 	}
 
 	@Override
@@ -52,4 +59,11 @@ public class CustomerService implements ICustomerService {
 		logger.info("CS:getCustomerByEmail:\t" + email);
 		return repository.findByCustomerEmail(email);
 	}
+
+	@Override
+	public List<CustomerView> getCustomersByCustomerType(Integer customerType) {
+		logger.info("CS:getCustomersByCustomerType:\t" + customerType);
+		return repository.findByCustomerType(customerType);
+	}
+
 }

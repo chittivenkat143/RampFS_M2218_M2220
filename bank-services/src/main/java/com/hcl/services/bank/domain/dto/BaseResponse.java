@@ -21,10 +21,14 @@ public class BaseResponse extends ResponseEntity<Object>{
 
 	public BaseResponse(Object body, MultiValueMap<String, String> headers, HttpStatus status) {
 		this(body, headers, status.value());
+		this.status = status;
 	}
 
 	public BaseResponse(Object body, MultiValueMap<String, String> headers, int rawStatus) {
 		super(body, headers, rawStatus);
+		this.response = body;
+		this.headersValues = headers;
+		this.rawStatus = rawStatus;
 	}
 
 	public HttpStatus getStatus() {
