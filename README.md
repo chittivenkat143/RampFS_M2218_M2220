@@ -3,12 +3,12 @@ Java Advanced Training | Spring | Spring Framework | Microservices
 
 
 Microservices Architecture 
-Services:
-  hcl-eureka-services
-  auth-service
-  bank-services
-  gateway-service
-Database:
-  rampfs_m2220.sql
+a) Services:
+  1) hcl-eureka-services
+  2) auth-service
+  3) bank-services
+  4)gateway-service
+b) Database:
+  1) rampfs_m2220.sql
   
   
