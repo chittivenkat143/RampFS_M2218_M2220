@@ -31,7 +31,7 @@ public class CustomerService implements ICustomerService {
 	public Customer saveOrUpdateCustomer(CustomerRequestDTO customerDto) {
 		logger.info("CS:saveOrUpdateCustomer");
 		Customer customer = mapper.toCustomerEntity(customerDto);
-		repository.save(customer);
+		customer = repository.save(customer);
 		return customer;
 	}
 
@@ -51,7 +51,8 @@ public class CustomerService implements ICustomerService {
 	@Override
 	public CustomerView getCustomerByCustomerMobile(String mobileNo) {
 		logger.info("CS:getCustomerDtoByCustomerMobile:\t" + mobileNo);
-		return repository.findCustomerByCustomerMobile(mobileNo);
+		return repository.findCustomerByCustomerMobile(mobileNo)
+				.orElseThrow(() -> new ResourceNotFoundException("Customer Not Found By Mobile:" + mobileNo));
 	}
 	
 	@Override

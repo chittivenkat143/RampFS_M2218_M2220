@@ -113,9 +113,7 @@ class CustomerControllerTest {
 	@DisplayName("Get Customer By Id: Negative")
 	void testGetCustomerById_NC() {
 		when(customerService.getCustomerById(any(Long.class))).thenThrow(new ResourceNotFoundException("Customer Not Found"));
-		RuntimeException exception = assertThrows(ResourceNotFoundException.class, ()->{
-			customerController.getCustomerById(10111l);
-		});
+		RuntimeException exception = assertThrows(ResourceNotFoundException.class, ()->customerController.getCustomerById(10111l));
 		assertEquals("Customer Not Found", exception.getMessage());
 	}
 
@@ -127,7 +125,6 @@ class CustomerControllerTest {
 		@SuppressWarnings("unchecked")
 		List<CustomerView> customersNew = (List<CustomerView>) customersBR.getResponse();
 		assertEquals(0, customersNew.size());
-		
 	}
 
 }

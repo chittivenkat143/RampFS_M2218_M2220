@@ -26,7 +26,7 @@ import com.hcl.services.bank.service.ITransactionService;
 import com.hcl.services.bank.utils.AppUtils;
 
 @RestController
-@RequestMapping("/transactions")
+@RequestMapping("/bank/transactions")
 public class TransactionController {
 
 	private static Logger logger = LoggerFactory.getLogger(TransactionController.class);
@@ -43,6 +43,11 @@ public class TransactionController {
 		}
 		logger.info("TC:/transactions/transaction:->TSImpl");
 		TransactionResponseDTO responseDTO = transactionService.buildTransaction(transactionDto);
+		if(responseDTO==null) {
+			logger.info("TC:responseDTO:empty");
+			return new BaseResponse("Transaction got failed", HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		
 		return new BaseResponse(responseDTO, HttpStatus.CREATED);
 	}
 
@@ -50,6 +55,9 @@ public class TransactionController {
 	public BaseResponse getTransactionByNumber(@PathVariable("transactionNumber") String transactionNumber) {
 		logger.info("TC:/transactions/{" + transactionNumber +"}:->TSImpl");
 		List<Transaction> transactions = transactionService.getTransactionByTransactionNumber(transactionNumber);
+		if(transactions!=null && transactions.size()==0) {
+			return new BaseResponse("No Transaction Found", HttpStatus.OK);
+		}
 		return new BaseResponse(transactions, HttpStatus.OK);
 	}
 
@@ -57,6 +65,9 @@ public class TransactionController {
 	public BaseResponse getTransactionByAccountId(@PathVariable("accountId") Long accountId) {
 		logger.info("TC:/transactions/{" + accountId +"}:->TSImpl");
 		List<Transaction> transactions = transactionService.getTransactionByAccountId(accountId);
+		if(transactions!=null && transactions.size()==0) {
+			return new BaseResponse("No Transaction Found", HttpStatus.OK);
+		}
 		return new BaseResponse(transactions, HttpStatus.OK);
 	}
 	
@@ -70,6 +81,9 @@ public class TransactionController {
 		}
 		logger.info("TC:/transactions/betweendates" + transactionDto.getAccountNumber() +"/"+ transactionDto.getFromDate() +"/" + transactionDto.getToDate());
 		List<TransactionDto> transactions = transactionService.getTransactionsBetweenDates(transactionDto);
+		if(transactions!=null && transactions.size()==0) {
+			return new BaseResponse("No Transaction found between selected dates", HttpStatus.OK);
+		}
 		return new BaseResponse(transactions, HttpStatus.OK);
 	}
 

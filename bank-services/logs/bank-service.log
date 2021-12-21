@@ -1,0 +1,649 @@
+[INFO ] 2021-12-17 16:57:40.971 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 10552 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-17 16:57:40.976 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-17 16:57:40.977 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-17 16:58:24.976 [http-nio-8080-exec-1] AccountController - AC:getAccountById:	100009
+[INFO ] 2021-12-17 16:58:24.979 [http-nio-8080-exec-1] AccountService - AS:getAccountById:100009
+[INFO ] 2021-12-17 16:58:31.939 [restartedMain] BankServicesApplication - Started BankServicesApplication in 53.357 seconds (JVM running for 56.584)
+[INFO ] 2021-12-17 21:09:29.287 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 11052 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-17 21:09:29.295 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-17 21:09:29.327 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-17 21:09:48.154 [restartedMain] BankServicesApplication - Started BankServicesApplication in 21.547 seconds (JVM running for 23.854)
+[INFO ] 2021-12-17 21:09:56.173 [http-nio-8080-exec-1] AccountController - AC:getAccountById:	100009
+[INFO ] 2021-12-17 21:09:56.173 [http-nio-8080-exec-1] AccountService - AS:getAccountById:100009
+[INFO ] 2021-12-17 21:10:12.206 [http-nio-8080-exec-2] AccountController - AC:getAccountById:	100009
+[INFO ] 2021-12-17 21:10:12.206 [http-nio-8080-exec-2] AccountService - AS:getAccountById:100009
+[INFO ] 2021-12-17 21:10:13.059 [http-nio-8080-exec-3] AccountController - AC:getAccountById:	100009
+[INFO ] 2021-12-17 21:10:13.059 [http-nio-8080-exec-3] AccountService - AS:getAccountById:100009
+[INFO ] 2021-12-17 21:10:16.890 [http-nio-8080-exec-4] AccountController - AC:getAccountById:	100008
+[INFO ] 2021-12-17 21:10:16.890 [http-nio-8080-exec-4] AccountService - AS:getAccountById:100008
+[INFO ] 2021-12-17 21:10:17.956 [http-nio-8080-exec-5] AccountController - AC:getAccountById:	100008
+[INFO ] 2021-12-17 21:10:17.956 [http-nio-8080-exec-5] AccountService - AS:getAccountById:100008
+[INFO ] 2021-12-17 23:10:54.347 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 1676 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-17 23:10:54.353 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-17 23:10:54.354 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-17 23:11:45.350 [restartedMain] BankServicesApplication - Started BankServicesApplication in 53.511 seconds (JVM running for 68.735)
+[INFO ] 2021-12-17 23:13:21.613 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12856 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-17 23:13:21.617 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-17 23:13:21.617 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-17 23:14:06.405 [restartedMain] BankServicesApplication - Started BankServicesApplication in 47.09 seconds (JVM running for 49.472)
+[INFO ] 2021-12-17 23:16:30.810 [https-openssl-nio-8443-exec-9] AccountController - AC:getAccountById:	100008
+[INFO ] 2021-12-17 23:16:30.811 [https-openssl-nio-8443-exec-9] AccountService - AS:getAccountById:100008
+[INFO ] 2021-12-17 23:19:27.531 [https-openssl-nio-8443-exec-6] AccountController - AC:getAccountById:	100008
+[INFO ] 2021-12-17 23:19:27.531 [https-openssl-nio-8443-exec-6] AccountService - AS:getAccountById:100008
+[INFO ] 2021-12-17 23:19:35.154 [https-openssl-nio-8443-exec-7] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:19:35.154 [https-openssl-nio-8443-exec-7] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:25:55.180 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 13952 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-17 23:25:55.184 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-17 23:25:55.185 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2021-12-17 23:25:58.867 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-17 23:25:58.867 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-17 23:25:58.868 [restartedMain] SecurityConfig$1 - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+[INFO ] 2021-12-17 23:26:27.496 [restartedMain] BankServicesApplication - Started BankServicesApplication in 34.424 seconds (JVM running for 36.46)
+[INFO ] 2021-12-17 23:26:40.775 [https-openssl-nio-8443-exec-5] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:26:40.776 [https-openssl-nio-8443-exec-5] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:29:28.307 [https-openssl-nio-8443-exec-1] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:29:28.307 [https-openssl-nio-8443-exec-1] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:29:30.499 [https-openssl-nio-8443-exec-2] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:29:30.499 [https-openssl-nio-8443-exec-2] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:29:31.781 [https-openssl-nio-8443-exec-3] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:29:31.781 [https-openssl-nio-8443-exec-3] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:29:32.007 [https-openssl-nio-8443-exec-4] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:29:32.007 [https-openssl-nio-8443-exec-4] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-17 23:29:32.201 [https-openssl-nio-8443-exec-5] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-17 23:29:32.201 [https-openssl-nio-8443-exec-5] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-18 00:27:17.523 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 14392 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 00:27:17.527 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 00:27:17.528 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2021-12-18 00:27:21.884 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-18 00:27:21.885 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-18 00:27:21.885 [restartedMain] SecurityConfig$1 - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+[INFO ] 2021-12-18 00:27:35.257 [restartedMain] BankServicesApplication - Started BankServicesApplication in 20.121 seconds (JVM running for 22.462)
+[INFO ] 2021-12-18 14:00:30.897 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-18 14:00:30.939 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-18 14:00:30.970 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 14:00:30.986 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 14:00:31.001 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 14:00:31.001 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 14:00:31.017 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 14:00:31.033 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 14:00:31.369 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 14:00:31.384 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 14:00:31.415 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 14:00:31.431 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 14:00:31.462 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 14:00:31.478 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 14:00:32.241 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 14:00:32.255 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 14:00:32.286 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 14:00:32.286 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 14:00:32.303 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 14:00:32.303 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 14:00:32.314 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-18 14:00:32.314 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 14:00:32.314 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 14:00:32.329 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 14:00:32.329 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-18 14:00:32.329 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-18 14:00:32.454 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-18 14:00:32.454 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-18 14:00:32.470 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-18 14:00:32.532 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-18 14:00:32.532 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-18 14:00:32.532 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-18 14:00:32.548 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 14:00:32.548 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 14:00:32.558 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 14:00:32.558 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 14:00:32.558 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 14:00:32.574 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 14:00:32.574 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-18 14:00:32.574 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 14:00:32.589 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 14:00:32.589 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 14:00:32.605 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 14:00:34.259 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12648 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 14:00:34.259 [main] BankServicesApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 14:00:34.259 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 14:00:59.719 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 26.501 seconds (JVM running for 32.886)
+[INFO ] 2021-12-18 16:41:41.082 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-18 16:41:41.132 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-18 16:41:41.159 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 16:41:41.167 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 16:41:41.180 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 16:41:41.198 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 16:41:41.212 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 16:41:41.224 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 16:41:41.525 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 16:41:41.565 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 16:41:41.582 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 16:41:41.592 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 16:41:41.603 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 16:41:41.608 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 16:41:41.845 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 16:41:41.854 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 16:41:41.893 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 16:41:41.900 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 16:41:41.911 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 16:41:41.918 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 16:41:41.923 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-18 16:41:41.928 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 16:41:41.938 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 16:41:41.944 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 16:41:41.953 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-18 16:41:41.956 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-18 16:41:42.137 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-18 16:41:42.139 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-18 16:41:42.145 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-18 16:41:42.159 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-18 16:41:42.166 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-18 16:41:42.168 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-18 16:41:42.224 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 16:41:42.227 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 16:41:42.241 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 16:41:42.253 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 16:41:42.281 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 16:41:42.291 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 16:41:42.292 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-18 16:41:42.303 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 16:41:42.312 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 16:41:42.314 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 16:41:42.327 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 16:41:43.952 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16284 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 16:41:43.957 [main] BankServicesApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 16:41:43.958 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 16:42:11.115 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 28.272 seconds (JVM running for 34.289)
+[INFO ] 2021-12-18 16:59:20.689 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-18 16:59:20.701 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-18 17:11:11.415 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-18 17:11:11.450 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-18 17:11:11.481 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 17:11:11.491 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 17:11:11.505 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 17:11:11.517 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 17:11:11.519 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 17:11:11.536 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 17:11:11.799 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:11.811 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:11.820 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 17:11:11.826 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 17:11:11.828 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 17:11:11.843 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 17:11:11.988 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-18 17:11:11.988 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-18 17:11:12.113 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 17:11:12.113 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 17:11:12.152 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 17:11:12.154 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 17:11:12.166 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 17:11:12.170 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 17:11:12.186 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-18 17:11:12.202 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:12.211 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:12.226 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:12.242 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-18 17:11:12.242 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-18 17:11:12.354 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-18 17:11:12.362 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-18 17:11:12.368 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:12.377 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-18 17:11:12.382 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-18 17:11:12.383 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-18 17:11:12.387 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 17:11:12.393 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 17:11:12.397 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 17:11:12.400 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 17:11:12.410 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 17:11:12.413 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 17:11:12.414 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-18 17:11:12.422 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 17:11:12.432 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 17:11:12.433 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 17:11:12.452 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 17:11:13.916 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 13256 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 17:11:13.926 [main] BankServicesApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 17:11:13.926 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 17:11:34.446 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 21.575 seconds (JVM running for 26.939)
+[INFO ] 2021-12-18 17:11:49.931 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-18 17:11:50.027 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-18 17:11:50.072 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 17:11:50.088 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-18 17:11:50.103 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 17:11:50.134 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-18 17:11:50.136 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 17:11:50.163 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-18 17:11:50.676 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:50.732 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:50.747 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 17:11:50.754 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-18 17:11:50.774 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 17:11:50.788 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-18 17:11:51.015 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 17:11:51.021 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 17:11:51.048 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 17:11:51.061 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-18 17:11:51.061 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 17:11:51.084 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-18 17:11:51.084 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-18 17:11:51.116 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:51.134 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:51.139 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-18 17:11:51.139 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-18 17:11:51.139 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-18 17:11:51.261 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-18 17:11:51.262 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-18 17:11:51.269 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-18 17:11:51.278 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-18 17:11:51.284 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-18 17:11:51.284 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-18 17:11:51.337 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 17:11:51.353 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 17:11:51.353 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 17:11:51.368 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 17:11:51.380 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 17:11:51.384 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-18 17:11:51.386 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-18 17:11:51.389 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-18 17:11:51.393 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-18 17:11:51.394 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-18 17:11:51.401 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-18 17:11:52.846 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 14000 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 17:11:52.846 [main] BankServicesApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 17:11:52.846 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 17:12:15.366 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 23.496 seconds (JVM running for 30.253)
+[INFO ] 2021-12-18 21:10:57.763 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:10:57.792 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:10:57.793 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2021-12-18 21:11:02.331 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-18 21:11:02.331 [restartedMain] SecurityConfig$1 - Code archive: C:\Users\chitt\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+[DEBUG] 2021-12-18 21:11:02.331 [restartedMain] SecurityConfig$1 - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+[INFO ] 2021-12-18 21:11:14.352 [restartedMain] BankServicesApplication - Started BankServicesApplication in 17.683 seconds (JVM running for 31.243)
+[INFO ] 2021-12-18 21:15:26.319 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:15:26.320 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:15:26.320 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:15:31.996 [restartedMain] BankServicesApplication - Started BankServicesApplication in 6.462 seconds (JVM running for 288.887)
+[INFO ] 2021-12-18 21:19:54.718 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:19:54.719 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:19:54.719 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:20:09.408 [restartedMain] BankServicesApplication - Started BankServicesApplication in 15.192 seconds (JVM running for 566.299)
+[INFO ] 2021-12-18 21:20:11.141 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:20:11.142 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:20:11.142 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:20:22.588 [restartedMain] BankServicesApplication - Started BankServicesApplication in 11.954 seconds (JVM running for 579.48)
+[INFO ] 2021-12-18 21:20:23.954 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:20:23.955 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:20:23.955 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:20:29.990 [restartedMain] BankServicesApplication - Started BankServicesApplication in 6.483 seconds (JVM running for 586.881)
+[INFO ] 2021-12-18 21:21:14.050 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:21:14.051 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:21:14.051 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:21:20.438 [restartedMain] BankServicesApplication - Started BankServicesApplication in 6.984 seconds (JVM running for 637.33)
+[INFO ] 2021-12-18 21:21:31.901 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:21:31.902 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:21:31.902 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:21:38.709 [restartedMain] BankServicesApplication - Started BankServicesApplication in 7.249 seconds (JVM running for 655.601)
+[INFO ] 2021-12-18 21:21:39.928 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16544 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:21:39.928 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:21:39.928 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:22:05.533 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:22:05.537 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:22:05.537 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:22:24.472 [restartedMain] BankServicesApplication - Started BankServicesApplication in 20.024 seconds (JVM running for 22.272)
+[INFO ] 2021-12-18 21:24:27.779 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:24:27.779 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:24:27.780 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:24:34.690 [restartedMain] BankServicesApplication - Started BankServicesApplication in 7.364 seconds (JVM running for 152.49)
+[INFO ] 2021-12-18 21:25:40.144 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:25:40.144 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:25:40.144 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:25:47.703 [restartedMain] BankServicesApplication - Started BankServicesApplication in 8.368 seconds (JVM running for 225.503)
+[INFO ] 2021-12-18 21:25:49.072 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:25:49.073 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:25:49.073 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:25:57.779 [restartedMain] BankServicesApplication - Started BankServicesApplication in 9.329 seconds (JVM running for 235.579)
+[INFO ] 2021-12-18 21:27:23.574 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:27:23.575 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:27:23.575 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:27:29.276 [restartedMain] BankServicesApplication - Started BankServicesApplication in 6.147 seconds (JVM running for 327.076)
+[INFO ] 2021-12-18 21:28:16.715 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12864 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[DEBUG] 2021-12-18 21:28:16.715 [restartedMain] BankServicesApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+[INFO ] 2021-12-18 21:28:16.716 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:28:21.444 [restartedMain] BankServicesApplication - Started BankServicesApplication in 5.129 seconds (JVM running for 379.243)
+[INFO ] 2021-12-18 21:33:34.539 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 3584 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:33:34.551 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:33:45.297 [restartedMain] BankServicesApplication - Started BankServicesApplication in 11.629 seconds (JVM running for 13.689)
+[INFO ] 2021-12-18 21:35:09.024 [http-nio-8080-exec-1] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 21:35:09.024 [http-nio-8080-exec-1] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-18 21:37:37.122 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 3584 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:37:37.123 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:49:54.252 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 2192 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:49:54.262 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:50:10.559 [restartedMain] BankServicesApplication - Started BankServicesApplication in 17.218 seconds (JVM running for 19.226)
+[INFO ] 2021-12-18 21:51:44.251 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 2192 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:51:44.251 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:51:59.258 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 2192 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:51:59.259 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:52:08.590 [restartedMain] BankServicesApplication - Started BankServicesApplication in 9.8 seconds (JVM running for 137.256)
+[INFO ] 2021-12-18 21:54:37.873 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 18504 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-18 21:54:37.884 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-18 21:54:51.355 [restartedMain] BankServicesApplication - Started BankServicesApplication in 14.549 seconds (JVM running for 16.633)
+[INFO ] 2021-12-18 21:56:23.448 [http-nio-8080-exec-3] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-18 21:56:23.449 [http-nio-8080-exec-3] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-19 22:59:56.622 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 10308 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-19 22:59:56.661 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-20 12:27:54.307 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 12:27:54.326 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 12:34:45.694 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 12:34:45.706 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 12:37:14.473 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 12:37:14.487 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 12:53:41.624 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 12:53:41.635 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 12:56:20.706 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 12:56:20.712 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 13:06:44.908 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:06:44.917 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 13:08:57.236 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:08:57.244 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 13:15:43.534 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:15:43.542 [main] TransactionService - TSImpl:buildTransaction:	null
+[INFO ] 2021-12-20 13:19:28.524 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:19:28.531 [main] TransactionService - TSImpl:buildTransaction:	null
+[ERROR] 2021-12-20 13:24:32.815 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 13:24:32.829 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:24:32.829 [main] TransactionService - TSImpl:buildTransaction:Exception:	null
+[ERROR] 2021-12-20 13:28:33.329 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[ERROR] 2021-12-20 13:28:33.338 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:28:33.342 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:28:33.343 [main] TransactionService - TSImpl:buildTransaction:Exception:	null
+[INFO ] 2021-12-20 13:29:22.134 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:29:22.141 [main] TransactionService - TSImpl:buildTransaction:Exception:	null
+[ERROR] 2021-12-20 13:29:22.490 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[ERROR] 2021-12-20 13:29:22.492 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:31:01.517 [main] TransactionService - TSImpl:buildTransaction
+[ERROR] 2021-12-20 13:31:01.524 [main] TransactionService - TSImpl:buildTransaction:Exception:	null
+[ERROR] 2021-12-20 13:31:01.875 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[ERROR] 2021-12-20 13:31:01.876 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[ERROR] 2021-12-20 13:37:16.527 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[ERROR] 2021-12-20 13:37:16.538 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[ERROR] 2021-12-20 13:38:38.215 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[ERROR] 2021-12-20 13:38:38.225 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:47:40.136 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 13:47:40.144 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:47:40.144 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	d123caba-d670-4c86-b11c-a16faf7e8328|true
+[INFO ] 2021-12-20 13:49:14.656 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 13:49:14.664 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:49:14.665 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	6d566ac0-4d03-43c6-bf79-92e778f90dd7|true
+[INFO ] 2021-12-20 13:50:04.214 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 13:50:04.222 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 13:50:04.222 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	615626fe-1da2-4952-8301-621a619f8402|true
+[INFO ] 2021-12-20 13:57:23.450 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 13:57:23.461 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 14:30:08.189 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 14:30:08.197 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 14:30:08.199 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	610ea02c-bb4a-4843-9789-524e1b22ffc8|true
+[INFO ] 2021-12-20 14:33:45.971 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 14:33:45.979 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 14:33:45.981 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	145201f2-a6a3-4669-9c52-b5574109d3cf|true
+[INFO ] 2021-12-20 14:36:45.572 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 14:36:45.581 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 14:36:45.584 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	f4f0cdb8-fca3-45c0-8078-40749ec83f9c|true
+[INFO ] 2021-12-20 14:51:35.505 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 14:51:35.517 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 14:51:35.519 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	-7751915283349509228|true
+[INFO ] 2021-12-20 15:20:29.636 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 15:20:29.646 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 15:20:29.651 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	fbdfae69-fb0b-4a0c-ba48-d2e1378fee6c|true
+[INFO ] 2021-12-20 15:54:50.444 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-20 15:54:50.455 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-20 22:08:52.620 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 13432 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-20 22:08:52.669 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-20 22:09:10.546 [restartedMain] BankServicesApplication - Started BankServicesApplication in 19.367 seconds (JVM running for 22.481)
+[INFO ] 2021-12-21 10:16:27.623 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:16:27.669 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:23:01.827 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:23:02.109 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:23:02.111 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:29:58.649 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:29:58.658 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:49:00.380 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:49:00.630 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:49:00.635 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:50:50.772 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:50:51.005 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:50:51.008 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:53:14.027 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:53:14.292 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:53:14.296 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:54:06.307 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:54:06.536 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:54:06.541 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:55:17.621 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:55:17.848 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 10:55:17.850 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 10:56:20.838 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 10:59:31.978 [main] TransactionService - TS:createTransaction: TxnTypeCREDIT: TxnNumber=c2e1bf41-1469-4ceb-8026-3a177729bba0
+[INFO ] 2021-12-21 11:10:20.274 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 11:10:20.288 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 11:10:20.290 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	71881617-c42f-4720-a4d0-239f8be10e53|true
+[INFO ] 2021-12-21 11:53:33.028 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 10000 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 11:53:33.044 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 11:53:49.756 [restartedMain] BankServicesApplication - Started BankServicesApplication in 17.985 seconds (JVM running for 20.351)
+[INFO ] 2021-12-21 13:31:08.110 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 16012 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 13:31:08.125 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 13:31:23.369 [restartedMain] BankServicesApplication - Started BankServicesApplication in 16.701 seconds (JVM running for 19.671)
+[INFO ] 2021-12-21 14:00:55.115 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 15956 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 14:00:55.135 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 14:01:16.452 [restartedMain] BankServicesApplication - Started BankServicesApplication in 23.244 seconds (JVM running for 29.706)
+[INFO ] 2021-12-21 16:05:23.263 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 13960 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 16:05:23.275 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 16:05:38.240 [restartedMain] BankServicesApplication - Started BankServicesApplication in 16.378 seconds (JVM running for 18.945)
+[INFO ] 2021-12-21 16:24:00.983 [restartedMain] BankServicesApplication - Starting BankServicesApplication using Java 11.0.1 on DESKTOP-D7FC8AL with PID 11336 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\classes started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 16:24:00.998 [restartedMain] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 16:24:16.384 [restartedMain] BankServicesApplication - Started BankServicesApplication in 16.601 seconds (JVM running for 19.126)
+[INFO ] 2021-12-21 16:29:37.417 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 4632 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 16:29:37.432 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 16:30:08.843 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 32.591 seconds (JVM running for 36.729)
+[INFO ] 2021-12-21 16:30:10.744 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 16:30:10.779 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 16:30:10.801 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 16:30:10.810 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 16:30:10.821 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 16:30:10.829 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 16:30:10.834 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-21 16:30:10.842 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:30:10.860 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:30:10.866 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:30:10.874 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-21 16:30:10.881 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-21 16:30:11.198 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-21 16:30:11.201 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-21 16:30:11.208 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:30:11.252 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-21 16:30:11.262 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-21 16:30:11.264 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-21 16:30:11.430 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 16:30:11.456 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 16:30:11.464 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 16:30:11.470 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 16:30:11.518 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 16:30:11.531 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 16:30:11.535 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-21 16:30:11.544 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 16:30:11.551 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 16:30:11.556 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 16:30:11.604 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 16:30:12.070 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-21 16:30:12.078 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-21 16:30:12.090 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 16:30:12.098 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 16:30:12.115 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 16:30:12.149 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 16:30:12.161 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 16:30:12.170 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 16:30:12.206 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:30:12.233 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:30:12.255 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 16:30:12.264 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 16:30:12.274 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 16:30:12.329 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 16:30:13.010 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-21 16:30:13.027 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-21 16:30:13.044 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	00e19e0d-680c-4da1-8b2c-ff8665e02f15|true
+[INFO ] 2021-12-21 16:32:13.299 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 17264 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 16:32:13.310 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 16:32:48.403 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 36.58 seconds (JVM running for 40.531)
+[INFO ] 2021-12-21 16:32:49.850 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 16:32:50.003 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 16:32:50.038 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 16:32:50.056 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 16:32:50.090 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 16:32:50.112 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 16:32:50.124 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-21 16:32:50.134 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:32:50.147 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:32:50.164 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 16:32:50.172 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-21 16:32:50.179 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-21 16:32:50.464 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-21 16:32:50.470 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-21 16:32:50.488 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:32:50.526 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-21 16:32:50.548 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-21 16:32:50.550 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-21 16:32:50.671 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 16:32:50.737 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 16:32:50.771 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 16:32:50.787 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 16:32:50.813 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 16:32:50.826 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 16:32:50.828 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-21 16:32:50.838 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 16:32:50.842 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 16:32:50.846 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 16:32:50.864 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 16:32:51.337 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-21 16:32:51.348 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-21 16:32:51.401 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 16:32:51.410 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 16:32:51.435 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 16:32:51.448 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 16:32:51.457 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 16:32:51.465 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 16:32:51.500 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:32:51.517 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 16:32:51.534 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 16:32:51.547 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 16:32:51.560 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 16:32:51.572 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 17:00:24.886 [main] BankServicesApplication - Starting BankServicesApplication v0.0.1-SNAPSHOT using Java 11.0.1 on DESKTOP-D7FC8AL with PID 9728 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\bank-services-0.0.1-SNAPSHOT.jar started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target)
+[INFO ] 2021-12-21 17:00:24.916 [main] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:01:12.498 [main] BankServicesApplication - Started BankServicesApplication in 49.101 seconds (JVM running for 51.492)
+[INFO ] 2021-12-21 17:33:47.876 [http-nio-8080-exec-1] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:33:47.878 [http-nio-8080-exec-1] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-21 17:37:24.846 [main] BankServicesApplication - Starting BankServicesApplication v0.0.1-SNAPSHOT using Java 11.0.1 on DESKTOP-D7FC8AL with PID 1232 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\bank-services-0.0.1-SNAPSHOT.jar started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target)
+[INFO ] 2021-12-21 17:37:24.862 [main] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:41:14.299 [main] BankServicesApplication - Starting BankServicesApplication v0.0.1-SNAPSHOT using Java 11.0.1 on DESKTOP-D7FC8AL with PID 20520 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\8080\bank-services-0.0.1-SNAPSHOT.jar started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services\8080)
+[INFO ] 2021-12-21 17:41:14.327 [main] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:41:51.621 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 7288 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 17:41:51.631 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:41:59.677 [main] BankServicesApplication - Started BankServicesApplication in 47.254 seconds (JVM running for 49.599)
+[INFO ] 2021-12-21 17:42:18.705 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 28.713 seconds (JVM running for 36.834)
+[INFO ] 2021-12-21 17:42:19.831 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:42:19.857 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:42:19.874 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 17:42:19.879 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 17:42:19.898 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 17:42:19.908 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 17:42:19.926 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-21 17:42:19.933 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:42:19.940 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:42:19.958 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:42:19.966 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-21 17:42:19.970 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-21 17:42:20.251 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-21 17:42:20.253 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-21 17:42:20.262 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:42:20.284 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-21 17:42:20.290 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-21 17:42:20.290 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-21 17:42:20.379 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 17:42:20.411 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 17:42:20.442 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 17:42:20.447 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 17:42:20.453 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 17:42:20.460 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 17:42:20.461 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-21 17:42:20.466 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 17:42:20.470 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 17:42:20.471 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 17:42:20.531 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 17:42:20.960 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-21 17:42:20.966 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-21 17:42:20.978 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 17:42:20.990 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 17:42:21.000 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 17:42:21.025 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 17:42:21.036 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 17:42:21.046 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 17:42:21.088 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:42:21.105 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:42:21.116 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 17:42:21.130 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 17:42:21.151 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 17:42:21.167 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 17:43:15.953 [main] BankServicesApplication - Starting BankServicesApplication v0.0.1-SNAPSHOT using Java 11.0.1 on DESKTOP-D7FC8AL with PID 20724 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\8083\bank-services-0.0.1-SNAPSHOT.jar started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services\8083)
+[INFO ] 2021-12-21 17:43:15.999 [main] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:43:41.460 [main] BankServicesApplication - Started BankServicesApplication in 27.053 seconds (JVM running for 29.314)
+[INFO ] 2021-12-21 17:54:25.407 [http-nio-8080-exec-1] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:54:25.408 [http-nio-8080-exec-1] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-21 17:55:07.665 [http-nio-8080-exec-2] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:55:07.666 [http-nio-8080-exec-2] AccountService - AS:getAccountById:100002
+[INFO ] 2021-12-21 17:55:51.695 [http-nio-8083-exec-1] CustomerController - CC:getCustomerById=	10004
+[INFO ] 2021-12-21 17:55:51.695 [http-nio-8083-exec-1] CustomerService - CS:getCustomerById:	10004
+[INFO ] 2021-12-21 17:55:51.988 [http-nio-8083-exec-1] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-21 17:58:06.953 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-21 17:58:07.037 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-21 17:58:07.119 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 17:58:07.166 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-21 17:58:07.243 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 17:58:07.273 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-21 17:58:07.306 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 17:58:07.347 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-21 17:58:08.025 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:58:08.043 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:58:08.055 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 17:58:08.065 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-21 17:58:08.076 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 17:58:08.086 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-21 17:58:08.974 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:58:08.991 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-21 17:58:09.047 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 17:58:09.058 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-21 17:58:09.075 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 17:58:09.087 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-21 17:58:09.093 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-21 17:58:09.103 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:58:09.119 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:58:09.127 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-21 17:58:09.135 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-21 17:58:09.138 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-21 17:58:09.398 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-21 17:58:09.398 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-21 17:58:09.415 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-21 17:58:09.437 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-21 17:58:09.443 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-21 17:58:09.443 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-21 17:58:09.453 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 17:58:09.493 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 17:58:09.497 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 17:58:09.513 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 17:58:09.524 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 17:58:09.533 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-21 17:58:09.534 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-21 17:58:09.537 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-21 17:58:09.546 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-21 17:58:09.546 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-21 17:58:09.579 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-21 17:58:12.259 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 12224 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-21 17:58:12.325 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-21 17:58:40.868 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 30.24 seconds (JVM running for 42.897)

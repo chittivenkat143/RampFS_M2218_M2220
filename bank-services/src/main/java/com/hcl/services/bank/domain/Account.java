@@ -1,5 +1,6 @@
 package com.hcl.services.bank.domain;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -14,6 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -35,8 +37,12 @@ public class Account {
 	private String accountNumber;
 
 	@CreationTimestamp
-	@Column(name = "accountCreatedOn")
-	private Date accountCreatedOn;
+	@Column(name = "accountCreatedOn", updatable = false)
+	private LocalDateTime accountCreatedOn;
+	
+	@UpdateTimestamp
+	@Column(name = "accountUpdatedOn")
+	private LocalDateTime accountUpdatedOn;
 
 	@ManyToOne
 	@JoinColumn(name = "accountType")

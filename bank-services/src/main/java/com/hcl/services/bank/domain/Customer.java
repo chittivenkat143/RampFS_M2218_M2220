@@ -1,5 +1,6 @@
 package com.hcl.services.bank.domain;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -12,6 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
@@ -50,8 +52,12 @@ public class Customer {
 	private Integer customerType;// General(101), Wealth(102)
 
 	@CreationTimestamp
-	@Column(name = "customerCreatedOn")
-	private Date customerCreatedOn;
+	@Column(name = "customerCreatedOn", updatable = false)
+	private LocalDateTime createDateTime;
+	
+	@UpdateTimestamp
+	@Column(name = "customerUpdatedOn")
+    private LocalDateTime updateDateTime;
 
 	@Column(name = "customerStatus")
 	private Integer customerStatus;// Active(0) , Inactive(1), Closed(2), Hold(3)

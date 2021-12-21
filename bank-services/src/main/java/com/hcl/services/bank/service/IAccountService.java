@@ -4,9 +4,10 @@ import java.util.List;
 
 import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.dto.AccountDto;
+import com.hcl.services.bank.domain.dto.AccountRequestDTO;
 
 public interface IAccountService {
-	public void saveOrUpdateAccount(Account account);
+	public Account saveOrUpdateAccount(AccountRequestDTO accountRequestDTO);
 
 	public Account getAccountById(Long accountId);
 

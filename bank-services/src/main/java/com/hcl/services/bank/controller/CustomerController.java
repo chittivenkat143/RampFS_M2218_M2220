@@ -28,7 +28,7 @@ import com.hcl.services.bank.utils.AppUtils;
 import com.hcl.services.bank.utils.MapperHelper;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/bank/customers")
 public class CustomerController {
 	private static Logger logger = LoggerFactory.getLogger(CustomerController.class);
 

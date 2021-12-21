@@ -1,6 +1,7 @@
 package com.hcl.services.bank.repo;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -13,7 +14,7 @@ import com.hcl.services.bank.domain.dto.projection.CustomerViewOpenProj;
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 	//List<Customer> findByCustomerType(Integer customerType);
 
-	CustomerView findCustomerByCustomerMobile(String mobileNo);
+	Optional<CustomerView> findCustomerByCustomerMobile(String mobileNo);
 	
 	CustomerViewOpenProj findByCustomerEmail(String customerEmail);
 	

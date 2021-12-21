@@ -1,5 +1,6 @@
 package com.hcl.services.bank.domain;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -14,6 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
@@ -34,8 +36,12 @@ public class Transaction {
 	private String transactionNumber;// unique for two records
 
 	@CreationTimestamp
-	@Column(name = "transactionOn")
-	private Date transactionOn;
+	@Column(name = "transactionOn", updatable = false)
+	private LocalDateTime transactionOn;
+	
+	@UpdateTimestamp
+	@Column(name = "transactionUpdatedOn")
+	private LocalDateTime transactionUpdatedOn;
 
 	@Column(name = "transactionAmount")
 	private Double transactionAmount;

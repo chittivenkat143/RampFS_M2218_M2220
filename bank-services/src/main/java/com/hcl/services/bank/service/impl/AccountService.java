@@ -10,11 +10,15 @@ import org.springframework.stereotype.Service;
 
 import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.AccountType;
+import com.hcl.services.bank.domain.Customer;
 import com.hcl.services.bank.domain.dto.AccountDto;
+import com.hcl.services.bank.domain.dto.AccountRequestDTO;
 import com.hcl.services.bank.exception.ResourceNotFoundException;
 import com.hcl.services.bank.repo.AccountRepository;
 import com.hcl.services.bank.repo.AccountTypeRepository;
+import com.hcl.services.bank.repo.CustomerRepository;
 import com.hcl.services.bank.service.IAccountService;
+import com.hcl.services.bank.utils.MapperHelper;
 
 @Service
 public class AccountService implements IAccountService {
@@ -24,12 +28,29 @@ public class AccountService implements IAccountService {
 	private AccountRepository repository;
 	
 	@Autowired
+	private CustomerRepository customerRepository;
+	
+	@Autowired
 	private AccountTypeRepository repositoryAT;
+	
+	@Autowired
+	private MapperHelper mapper;
 
 	@Override
-	public void saveOrUpdateAccount(Account account) {
+	public Account saveOrUpdateAccount(AccountRequestDTO accountRequestDTO) {
 		logger.info("AS:saveOrUpdateAccount");
-		repository.save(account);
+		Optional<Customer> customer =  customerRepository.findById(Long.valueOf(accountRequestDTO.getAccountCustomerId()));
+		if(customer.isPresent()) {
+			Account account = mapper.toAccountEntity(accountRequestDTO);
+			Optional<AccountType> accountTypeOpt = repositoryAT.findById(Long.valueOf(accountRequestDTO.getAccountCode()));
+			if(accountTypeOpt.isPresent()) {
+				account.setAccountType(accountTypeOpt.get());
+			}
+			account.setAccountCustomerId(customer.get());
+			return repository.save(account);
+		}else {
+			throw new ResourceNotFoundException("Customer details not found for Id:" + accountRequestDTO.getAccountCustomerId());
+		} 
 	}
 
 	@Override

@@ -15,4 +15,9 @@ public interface CustomerView {
 	public Date getCustomerCreatedOn();
 	public Integer getCustomerStatus();
 	public List<AccountView> getAccounts();
+	
+	public Long setCustomerId(Long customerId);
+	public String setCustomerName(String customerName);
+	public String setCustomerMobile(String customerMobile);
+	public String setCustomerEmail(String customerEmail);
 }

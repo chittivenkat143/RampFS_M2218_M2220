@@ -26,25 +26,21 @@ import com.hcl.services.bank.utils.AppUtils;
 import com.hcl.services.bank.utils.MapperHelper;
 
 @RestController
-@RequestMapping("/accounts")
+@RequestMapping("/bank/accounts")
 public class AccountController {
 	private static Logger logger = LoggerFactory.getLogger(AccountController.class);
 
 	@Autowired
 	private IAccountService accountService;
 
-	@Autowired
-	private MapperHelper mapper;
-
 	@PostMapping("/account")
 	public BaseResponse saveOrUpdateAccount(@Valid @RequestBody AccountRequestDTO accountDto, BindingResult errors) {
 		logger.info("AC:saveOrUpdateAccount:\t");
 		if (errors.hasErrors()) {
 			logger.error("AC:saveOrUpdateAccount:\t" + AppUtils.getInstance().getBindingResultToStrings(errors));
-			throw new BaseException("Request has some errors");
+			return new BaseResponse(errors.getAllErrors(), HttpStatus.BAD_REQUEST);
 		}
-		Account account = mapper.toAccountEntity(accountDto);
-		accountService.saveOrUpdateAccount(account);
+		Account account = accountService.saveOrUpdateAccount(accountDto);
 		return new BaseResponse(account, HttpStatus.CREATED);
 	}
 

@@ -13,7 +13,7 @@ import com.hcl.services.bank.domain.dto.TransactionRequestDateDto;
 import com.hcl.services.bank.domain.dto.TransactionResponseDTO;
 
 public interface ITransactionService {
-	public void createTransaction(Transaction transaction);
+	public Transaction createTransaction(Transaction transaction);
 	
 	public void creditToAccount(Account creditAcc, Double amount, String txnNumber);
 	
