@@ -36,6 +36,9 @@ employee-services/.mvn/
 gateway-service/.mvn/
 hcl-eureka-services/.mvn/
 
+bank-services/8080/*
+bank-services/8083/*
+
 **/mvnw
 **/mvnw.cmd
 
