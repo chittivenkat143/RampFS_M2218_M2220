@@ -36,6 +36,9 @@ employee-services/.mvn/
 gateway-service/.mvn/
 hcl-eureka-services/.mvn/
 
+**/mvnw
+**/mvnw.cmd
+
 ### STS ###
 .classpath
 .project
