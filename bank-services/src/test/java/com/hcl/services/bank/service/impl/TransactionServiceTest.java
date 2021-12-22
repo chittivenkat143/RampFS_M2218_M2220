@@ -4,7 +4,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.verify;
 import static org.powermock.api.mockito.PowerMockito.when;
 
 import java.util.ArrayList;
@@ -13,7 +12,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -50,7 +48,7 @@ class TransactionServiceTest {
 	
 	AccountRepository accountR;
 	TransactionRepository transactionR;
-	TransactionService mock;	
+	TransactionService mock;
 	
 	@BeforeEach
 	void setUp() throws Exception {
@@ -106,7 +104,6 @@ class TransactionServiceTest {
 	 * @throws Exception
 	 */
 	@Test
-	@Disabled
 	final void testBuildTransaction() throws Exception {
 		PowerMockito.mockStatic(UUID.class);
 		
@@ -160,31 +157,6 @@ class TransactionServiceTest {
 		Transaction txnDebitOpt = mock.createTransaction(transactionCredit);
 		assertNotNull(txnDebitOpt);
 		assertEquals(txnDebitOpt.getTransactionNumber(), strUUID);
-	}
-
-	@Test
-	final void testCreditToAccount() {
-		
-	}
-
-	@Test
-	final void testDebitFromAccount() {
-		
-	}
-
-	@Test
-	final void testGetTransactionByAccountId() {
-		
-	}
-
-	@Test
-	final void testGetTransactionByTransactionNumber() {
-		
-	}
-
-	@Test
-	final void testGetTransactionsBetweenDates() {
-		
 	}
 
 }

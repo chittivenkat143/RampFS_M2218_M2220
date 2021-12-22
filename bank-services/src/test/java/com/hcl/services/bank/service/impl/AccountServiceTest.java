@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -15,10 +17,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Answers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.MockedConstruction;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
+import com.github.javafaker.Faker;
+import com.github.javafaker.Number;
 import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.AccountType;
 import com.hcl.services.bank.domain.Customer;
@@ -53,18 +62,24 @@ class AccountServiceTest {
 	private Account account;
 	private Customer customer;
 	private AccountType accountType;
-
+	
+	@Mock(answer = Answers.RETURNS_DEEP_STUBS)
+	Faker faker;// = Mockito.mock(Faker.class, RETURNS_DEEP_STUBS);
+	
+	@Mock
+	Number number;
+	
 	@BeforeEach
 	void setUp() throws Exception {
 		accountRequestDto = new AccountRequestDTO();
 		accountRequestDto.setAccountBalance(10000d);
 		accountRequestDto.setAccountCode(1001);
 		accountRequestDto.setAccountCustomerId(10001);
-		accountRequestDto.setAccountNumber("565546443699");
+		accountRequestDto.setAccountNumber("5655464436");
 
 		account = new Account();
 		account.setAccountBalance(10000.0d);
-		account.setAccountNumber("565546443699");
+		account.setAccountNumber("5655464436");
 		customer = new Customer();
 		customer.setCustomerId(10001l);
 		account.setAccountCustomerId(customer);
@@ -72,24 +87,28 @@ class AccountServiceTest {
 		accountType.setAccountCode(1001l);
 		account.setAccountType(accountType);
 		
-		accounts.add(account);
+		accounts.add(account);		
 	}
-
+	
 	@Test
 	@DisplayName("Save Account: Positive")
 	final void testSaveAccount_PC() {
+			
 		when(repositoryCus.findById(10001l)).thenReturn(Optional.of(customer));
 		when(repositoryAT.findById(1001l)).thenReturn(Optional.of(accountType));
 		when(mapper.toAccountEntity(accountRequestDto)).thenReturn(account);
+		when(faker.number().digits(12)).thenReturn(String.valueOf("475512388322"));
+		String accountNumber = faker.number().digits(12);
 		when(repository.save(account)).thenAnswer(c->{
 			Account account = new Account();
 			account.setAccountId(100010l);
-			account.setAccountNumber("565546443699");
+			account.setAccountNumber(accountNumber);
 			return account;
 		});
+		
 		Account account = service.saveOrUpdateAccount(accountRequestDto);
 		assertAll("account", ()->assertEquals(100010l, account.getAccountId()),
-				()->assertEquals("565546443699", account.getAccountNumber()));
+				()->assertEquals(accountNumber, account.getAccountNumber()));
 	}
 	
 	@Test

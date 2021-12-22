@@ -20,10 +20,5 @@ public class BankServicesApplication {
 	public ModelMapper modelMapper() {
 		return new ModelMapper();
 	}
-	
-	@Bean
-	public TransferContext getTransferContext() {
-		return new TransferContext();
-	}
 
 }

@@ -11,17 +11,25 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.client.WebClient;
 
+import com.hcl.employee.dto.BaseResponse;
 import com.hcl.employee.entity.Employee;
 import com.hcl.employee.services.EmployeeServiceImpl;
-import com.hcl.services.base.BaseResponse;
+
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping("/employee")
 public class EmployeeRestController {
 
+	private static final String GET_BANK_CUSTOMERS_BY_EMPID = "/customers/";
+
 	@Autowired
 	private EmployeeServiceImpl employeeService;
+	
+	@Autowired
+	private WebClient client;
 	
 	@GetMapping("/all")
 	public BaseResponse getEmployees() {
@@ -46,5 +54,11 @@ public class EmployeeRestController {
 		employeeService.deleteEmployeeId(employeeId);
 		return new BaseResponse(HttpStatus.OK, "Employee record deleted successfully");
 	}
-
+	
+	@GetMapping("/customers/{employeeId}")
+	public BaseResponse getAllCustomerByEmployeeId(@PathVariable("employeeId") Integer employeeId) {		
+		Flux<BaseResponse> baseResponse = client.get().uri(GET_BANK_CUSTOMERS_BY_EMPID + "" + employeeId).retrieve().bodyToFlux(BaseResponse.class);
+		
+		return new BaseResponse(HttpStatus.OK, null);
+	}
 }

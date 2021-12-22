@@ -24,6 +24,16 @@ Servers/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+hcl-libraries/*
+hcl-rest-dependencies/*
+CompanyApp-main/*
+SpringBeansHandson/*
+
+auth-service/.mvn/
+bank-services/.mvn/
+employee-services/.mvn/
+gateway-service/.mvn/
+hcl-eureka-services/.mvn/
 
 ### STS ###
 .classpath

@@ -1,6 +1,5 @@
 package com.hcl.services.bank.domain.dto;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Temporal;

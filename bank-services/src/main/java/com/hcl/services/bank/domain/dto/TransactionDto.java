@@ -7,9 +7,6 @@ import com.hcl.services.bank.domain.Account;
 import com.hcl.services.bank.domain.Transaction.State;
 import com.hcl.services.bank.domain.Transaction.TxnType;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 public class TransactionDto implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
