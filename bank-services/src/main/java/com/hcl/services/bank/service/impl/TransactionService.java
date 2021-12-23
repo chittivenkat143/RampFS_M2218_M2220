@@ -39,6 +39,13 @@ public class TransactionService implements ITransactionService {
 
 	@Autowired
 	private MapperHelper mapper;
+	
+	public TransactionService(TransactionRepository transactionRepo, AccountRepository accountRepo,
+			MapperHelper mapper) {
+		this.transactionRepo = transactionRepo;
+		this.accountRepo = accountRepo;
+		this.mapper = mapper;
+	}
 
 	@Transactional
 	@Override
@@ -49,47 +56,52 @@ public class TransactionService implements ITransactionService {
 			Optional<Account> accountDebit = accountRepo.findByAccountNumber(transactionDto.getAccountNumberDebit());
 			Optional<Account> accountCredit = accountRepo.findByAccountNumber(transactionDto.getAccountNumberCredit());
 			String transactionNumber = UUID.randomUUID().toString();
-			if (isBothAccountsAreActive(accountDebit, accountCredit)) {
-				logger.info("Both Accounts are available And Transaction state is " + Transaction.State.INITIATE.toString());
-				
-				responseDto.setTxnNumber(transactionNumber);
-				responseDto.setCreditAccount(mapper.toAccountDto(accountCredit.get()));
-				responseDto.setDebitAccount(mapper.toAccountDto(accountDebit.get()));
-				responseDto.setAmount(transactionDto.getTransactionAmount());
-				
-				if (validateCreditLimit(transactionDto, accountDebit)) {
-					logger.info("Amount avaliable for transaction");
-
-					debitFromAccount(accountDebit.get(), transactionDto.getTransactionAmount(), transactionNumber);
-					creditToAccount(accountCredit.get(), transactionDto.getTransactionAmount(), transactionNumber);
-
-					Optional<Transaction> txnDebitOpt = getTransactionByAccountAndTxnNumber(accountDebit, transactionNumber);
-					Optional<Transaction> txnCreditOpt = getTransactionByAccountAndTxnNumber(accountCredit, transactionNumber);
-					
-					if(txnDebitOpt.isPresent() && txnCreditOpt.isPresent()) {
-						Transaction txnDebit = txnDebitOpt.get();
-						Transaction txnCredit = txnCreditOpt.get();
-						responseDto.setTransactions(Arrays.asList(mapper.toTransactionDto(txnDebit), mapper.toTransactionDto(txnCredit)));
-						responseDto.setTxnState(Transaction.State.COMPLETE.name());
-						logger.error("TransactionD:" + txnDebit.getTransactionType() +":TxnNumber= "+ txnDebit.getTransactionNumber());
-						logger.error("TransactionC:" + txnCredit.getTransactionType() +":TxnNumber= "+ txnCredit.getTransactionNumber());
-					}else {
-						logger.error("Transaction not found due to techincal issue");
-						responseDto.setTxnState(Transaction.State.FAILED.name());
-						throw new ResourceNotFoundException("Transaction not found");
-					}
-					
-				} else {
-					logger.error("Amount not avaliable for transaction");
-					responseDto.setTxnState(Transaction.State.FAILED.name());
-					throw new InsufficientBalanceException("Insufficient balance for the transaction");
-				}
-			} else {
+			
+			if (!isBothAccountsAreActive(accountDebit, accountCredit)) {
 				logger.error("Both Accounts must available for transaction");
 				responseDto.setTxnNumber(transactionNumber);
 				responseDto.setTxnState(Transaction.State.FAILED.name());
 				throw new ResourceNotFoundException("Account not found");
 			}
+			
+			if (!validateCreditLimit(transactionDto, accountDebit)) {
+				logger.error("Amount not avaliable for transaction");
+				responseDto.setTxnState(Transaction.State.FAILED.name());
+				throw new InsufficientBalanceException("Insufficient balance for the transaction");
+			}
+			
+			logger.info("Both Accounts are available And Transaction state is " + Transaction.State.INITIATE.toString());
+			
+			responseDto.setTxnNumber(transactionNumber);
+			responseDto.setCreditAccount(mapper.toAccountDto(accountCredit.get()));
+			responseDto.setDebitAccount(mapper.toAccountDto(accountDebit.get()));
+			responseDto.setAmount(transactionDto.getTransactionAmount());
+			
+			logger.info("Amount avaliable for transaction");
+
+			debitFromAccount(accountDebit.get(), transactionDto.getTransactionAmount(), transactionNumber);
+			creditToAccount(accountCredit.get(), transactionDto.getTransactionAmount(), transactionNumber);
+
+			Optional<Transaction> txnDebitOpt = getTransactionByAccountAndTxnNumber(accountDebit, transactionNumber);
+			Optional<Transaction> txnCreditOpt = getTransactionByAccountAndTxnNumber(accountCredit, transactionNumber);
+			
+			//Optional<Transaction> txnDebitOpt = transactionRepo.findByTransactionNumberAndTransactionAccountNumber(transactionNumber, accountDebit.get().getAccountNumber());
+			//Optional<Transaction> txnCreditOpt = transactionRepo.findByTransactionNumberAndTransactionAccountNumber(transactionNumber, accountDebit.get().getAccountNumber());
+			
+			if(txnDebitOpt.isPresent() && txnCreditOpt.isPresent()) {
+				Transaction txnDebit = txnDebitOpt.get();
+				Transaction txnCredit = txnCreditOpt.get();
+				responseDto.setTransactions(Arrays.asList(mapper.toTransactionDto(txnDebit), mapper.toTransactionDto(txnCredit)));
+				responseDto.setTxnState(Transaction.State.COMPLETE.name());
+				logger.error("TransactionD:" + txnDebit.getTransactionType() +":TxnNumber= "+ txnDebit.getTransactionNumber());
+				logger.error("TransactionC:" + txnCredit.getTransactionType() +":TxnNumber= "+ txnCredit.getTransactionNumber());
+			}else {
+				logger.error("Transaction not found due to techincal issue");
+				responseDto.setTxnState(Transaction.State.FAILED.name());
+				throw new ResourceNotFoundException("Transaction not found");
+			}
+			
+			
 		} catch (Exception e) {
 			logger.error("TSImpl:buildTransaction:Exception:\t" + e.getMessage());
 			responseDto = null;
@@ -112,14 +124,12 @@ public class TransactionService implements ITransactionService {
 		return transactionDto.getTransactionAmount() < accountDebit.get().getAccountBalance();
 	}
 
-	@Override
-	public Transaction createTransaction(Transaction transaction) {
+	private Transaction createTransaction(Transaction transaction) {
 		logger.info("TS:createTransaction: TxnType" + transaction.getTransactionType() +": TxnNumber="+ transaction.getTransactionNumber());
 		return transactionRepo.save(transaction);
 	}
 
-	@Override
-	public void creditToAccount(Account creditAcc, Double amount, String txnNumber) {
+	private void creditToAccount(Account creditAcc, Double amount, String txnNumber) {
 		logger.info("TS:creditToAccount:" + amount +":"+ txnNumber);
 		try {
 			creditAcc.setAccountBalance(creditAcc.getAccountBalance() + amount);
@@ -138,8 +148,7 @@ public class TransactionService implements ITransactionService {
 		}
 	}
 
-	@Override
-	public void debitFromAccount(Account debitAcc, Double amount, String txnNumber) {
+	private void debitFromAccount(Account debitAcc, Double amount, String txnNumber) {
 		logger.info("TS:debitFromAccount:" + amount +":"+ txnNumber);
 		try {
 			debitAcc.setAccountBalance(debitAcc.getAccountBalance() - amount);

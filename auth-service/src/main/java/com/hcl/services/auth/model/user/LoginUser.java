@@ -1,4 +1,4 @@
-package com.hcl.services.auth.model;
+package com.hcl.services.auth.model.user;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,7 +23,7 @@ public class LoginUser {
 	@Column(name = "loginuserId")
 	private Long loginUserId;
 	
-	@Column(name = "username")
+	@Column(name = "username", unique = true)
 	private String username;
 	@Column(name = "password")
 	private String password;

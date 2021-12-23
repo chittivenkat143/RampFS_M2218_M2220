@@ -2091,3 +2091,197 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry ''
 [INFO ] 2021-12-22 23:08:59.892 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
 [INFO ] 2021-12-22 23:08:59.903 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
 [INFO ] 2021-12-22 23:08:59.909 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	2|true
+[INFO ] 2021-12-23 12:46:38.554 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-23 12:46:38.633 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-23 12:46:38.679 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 12:46:38.690 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 12:46:38.707 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 12:46:38.709 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 12:46:38.711 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 12:46:38.724 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 12:46:38.725 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 12:46:38.729 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 12:46:38.739 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 12:46:38.747 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 12:46:39.288 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 12:46:39.327 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 12:46:39.424 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 12:46:39.441 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 12:46:39.466 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 12:46:39.478 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 12:46:40.913 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 12:46:40.915 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 12:46:40.918 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	84798f15-b48f-4bef-b85f-037092ad8948|true
+[INFO ] 2021-12-23 12:46:41.049 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 12:46:41.056 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 12:46:41.100 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 12:46:41.104 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 12:46:41.111 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 12:46:41.117 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 12:46:41.122 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-23 12:46:41.126 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 12:46:41.134 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 12:46:41.140 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 12:46:41.149 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-23 12:46:41.170 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-23 12:46:41.337 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-23 12:46:41.339 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-23 12:46:41.347 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-23 12:46:41.362 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-23 12:46:41.370 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-23 12:46:41.371 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-23 12:46:41.384 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 12:46:41.385 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 12:46:41.391 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 12:46:41.396 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 12:46:41.403 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 12:46:41.408 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 12:46:41.409 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-23 12:46:41.415 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 12:46:41.421 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 12:46:41.421 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 12:46:41.433 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 12:46:43.502 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 19184 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-23 12:46:43.508 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-23 12:47:09.791 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 27.531 seconds (JVM running for 36.761)
+[INFO ] 2021-12-23 12:50:06.844 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 12:50:06.854 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 12:51:25.704 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 12:51:25.713 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:01:08.386 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:01:08.392 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:01:08.401 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	f25d6828-8806-4dae-8c2c-21d37e0ecd25|true
+[INFO ] 2021-12-23 13:12:59.671 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:12:59.682 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:12:59.687 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	57a2ddbb-c6eb-43c7-88ab-d8223438dbe4|true
+[INFO ] 2021-12-23 13:16:56.688 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:16:56.696 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:16:56.701 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	2|true
+[INFO ] 2021-12-23 13:17:38.166 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:17:38.190 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:23:30.222 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:23:30.231 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:23:30.236 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	c1bd48cb-30a5-4216-88be-33980ba1f7ab|true
+[INFO ] 2021-12-23 13:27:14.509 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:27:14.520 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:27:14.528 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	d21392be-a437-4551-be6b-be827032d099|true
+[INFO ] 2021-12-23 13:33:22.026 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:33:22.036 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 13:33:54.746 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 13:33:54.756 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 17:07:35.542 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:07:35.554 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 17:08:06.580 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:08:06.588 [main] TransactionService - TSImpl:validateCreditLimit	TransactionRequestDTO(accountNumberDebit=565546443633, accountNumberCredit=565546443699, transactionAmount=1000.0)|true
+[INFO ] 2021-12-23 17:08:06.593 [main] TransactionService - TSImpl:getTransactionByAccountAndTxnNumber	f8dc2581-5845-4ecf-a8a9-063d9285c6b7|true
+[INFO ] 2021-12-23 17:13:49.149 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:20:25.763 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:21:47.847 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:21:47.856 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:26:17.091 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:34:45.544 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:36:18.633 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 17:37:04.442 [main] TransactionService - TSImpl:isBothAccountsAreActive	true|true
+[INFO ] 2021-12-23 19:49:52.177 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-23 19:49:52.231 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-23 19:49:52.258 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 19:49:52.266 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 19:49:52.285 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 19:49:52.288 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 19:49:52.289 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 19:49:52.299 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 19:49:52.300 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 19:49:52.302 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 19:49:52.313 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 19:49:52.331 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 19:49:52.732 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:49:52.744 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:49:52.760 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 19:49:52.778 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 19:49:52.794 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 19:49:52.817 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 19:49:53.232 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 19:49:53.247 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 19:49:53.310 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 19:49:53.316 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 19:49:53.330 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 19:49:53.337 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 19:49:53.341 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-23 19:49:53.347 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:49:53.356 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:49:53.365 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:49:53.372 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-23 19:49:53.377 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-23 19:49:53.540 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-23 19:49:53.541 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-23 19:49:53.548 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:49:53.564 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-23 19:49:53.570 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-23 19:49:53.571 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-23 19:49:53.582 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 19:49:53.583 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 19:49:53.591 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 19:49:53.600 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 19:49:53.610 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 19:49:53.617 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 19:49:53.618 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-23 19:49:53.627 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 19:49:53.632 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 19:49:53.634 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 19:49:53.648 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 19:49:55.666 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 13132 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-23 19:49:55.672 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-23 19:50:21.786 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 27.498 seconds (JVM running for 49.727)
+[INFO ] 2021-12-23 19:51:57.344 [main] BankServicesApplicationTests - Starting BankServicesApplicationTests using Java 11.0.1 on DESKTOP-D7FC8AL with PID 11168 (started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services)
+[INFO ] 2021-12-23 19:51:57.359 [main] BankServicesApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-23 19:52:22.073 [main] BankServicesApplicationTests - Started BankServicesApplicationTests in 26.169 seconds (JVM running for 31.414)
+[INFO ] 2021-12-23 19:52:22.912 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 19:52:22.939 [main] AccountController - AC:getAccountById:	100002
+[INFO ] 2021-12-23 19:52:22.968 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 19:52:22.978 [main] AccountController - AC:getAccountByNumber:	565546443699
+[INFO ] 2021-12-23 19:52:22.989 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 19:52:23.002 [main] AccountController - AC:getAccountsByAccountType:	1001
+[INFO ] 2021-12-23 19:52:23.008 [main] AccountController - AC:getAccountDtoById:	100002
+[INFO ] 2021-12-23 19:52:23.024 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:52:23.055 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:52:23.064 [main] AccountController - AC:saveOrUpdateAccount:	
+[INFO ] 2021-12-23 19:52:23.070 [main] AccountController - AC:saveOrUpdateAccount:	
+[ERROR] 2021-12-23 19:52:23.074 [main] AccountController - AC:saveOrUpdateAccount:	[]
+[INFO ] 2021-12-23 19:52:23.404 [main] CustomerController - CC:saveOrUpdateCustomer
+[ERROR] 2021-12-23 19:52:23.406 [main] CustomerController - CC:errors:	[]
+[INFO ] 2021-12-23 19:52:23.413 [main] CustomerController - CC:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:52:23.428 [main] CustomerController - CC:getCustomerById=	10111
+[INFO ] 2021-12-23 19:52:23.432 [main] CustomerController - CC:getCustomerById=	10001
+[INFO ] 2021-12-23 19:52:23.433 [main] CustomerController - CC:getCustomerById:Found
+[INFO ] 2021-12-23 19:52:23.532 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 19:52:23.600 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 19:52:23.613 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 19:52:23.618 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 19:52:23.626 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-5a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 19:52:23.632 [main] TransactionController - TC:/transactions/transaction:->TSImpl
+[INFO ] 2021-12-23 19:52:23.633 [main] TransactionController - TC:responseDTO:empty
+[INFO ] 2021-12-23 19:52:23.637 [main] TransactionController - TC:/transactions/{100001}:->TSImpl
+[INFO ] 2021-12-23 19:52:23.656 [main] TransactionController - TC:/transactions/betweendates:->TSImpl
+[INFO ] 2021-12-23 19:52:23.670 [main] TransactionController - TC:/transactions/betweendatesnull/null/null
+[INFO ] 2021-12-23 19:52:23.710 [main] TransactionController - TC:/transactions/{c2e1bf41-1469-4ceb-8026-3a177729bba0}:->TSImpl
+[INFO ] 2021-12-23 19:52:24.310 [main] AccountService - AS:getAccountById:100011
+[INFO ] 2021-12-23 19:52:24.317 [main] AccountService - AS:getAccountById:100010
+[INFO ] 2021-12-23 19:52:24.333 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 19:52:24.345 [main] AccountService - AS:getAccountsByAccountCode:1001
+[INFO ] 2021-12-23 19:52:24.361 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 19:52:24.361 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 19:52:24.364 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 19:52:24.378 [main] AccountService - AS:saveOrUpdateAccount
+[INFO ] 2021-12-23 19:52:24.379 [main] AccountService - AS:saveOrUpdateAccount: Customer is Present
+[INFO ] 2021-12-23 19:52:24.382 [main] AccountService - AS:saveOrUpdateAccount: AccountType is Present
+[INFO ] 2021-12-23 19:52:24.394 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 19:52:24.400 [main] AccountService - AS:getAccountByAccountNumber:565546443699
+[INFO ] 2021-12-23 19:52:24.434 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:52:24.450 [main] CustomerService - CS:saveOrUpdateCustomer
+[INFO ] 2021-12-23 19:52:24.460 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 19:52:24.466 [main] CustomerService - CS:getCustomerById:	10001
+[INFO ] 2021-12-23 19:52:24.480 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 19:52:24.489 [main] CustomerService - CS:getCustomerDtoByCustomerMobile:	9568568556
+[INFO ] 2021-12-23 20:11:19.713 [main] BankServicesApplication - Starting BankServicesApplication v0.0.1-SNAPSHOT using Java 11.0.1 on DESKTOP-D7FC8AL with PID 10084 (G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target\bank-services-0.0.1-SNAPSHOT.jar started by chitt in G:\STSWorkspace\RampFS_M2218_M2220\bank-services\target)
+[INFO ] 2021-12-23 20:11:19.732 [main] BankServicesApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-12-23 20:12:13.439 [main] BankServicesApplication - Started BankServicesApplication in 55.197 seconds (JVM running for 57.948)

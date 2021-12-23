@@ -13,12 +13,6 @@ import com.hcl.services.bank.domain.dto.TransactionRequestDateDto;
 import com.hcl.services.bank.domain.dto.TransactionResponseDTO;
 
 public interface ITransactionService {
-	public Transaction createTransaction(Transaction transaction);
-	
-	public void creditToAccount(Account creditAcc, Double amount, String txnNumber);
-	
-	public void debitFromAccount(Account debitAcc, Double amount, String txnNumber);
-
 	public List<Transaction> getTransactionByAccountId(Long accountId);
 
 	public List<Transaction> getTransactionByTransactionNumber(String transactionNumber);

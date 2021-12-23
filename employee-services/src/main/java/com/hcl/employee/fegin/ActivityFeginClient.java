@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.hcl.employee.entity.Activity;
 
 @FeignClient(name = "activities-service", url = "http://localhost:8081/activity")
-public interface EmployeeFeginClient {
+public interface ActivityFeginClient {
 
 	@GetMapping("/activitiesByCode/{employeeCode}")
 	public List<Activity> getActivitiesByCode(@PathVariable("employeeCode") Integer employeeCode);

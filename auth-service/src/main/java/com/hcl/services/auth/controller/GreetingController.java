@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hcl.services.auth.dto.AuthenticationRequest;
 import com.hcl.services.auth.dto.AuthenticationResponse;
-import com.hcl.services.auth.model.LoginUser;
-import com.hcl.services.auth.repo.LoginUserRepository;
+import com.hcl.services.auth.model.user.LoginUser;
+import com.hcl.services.auth.repo.user.LoginUserRepository;
 import com.hcl.services.auth.service.HclUserDetailsService;
 import com.hcl.services.auth.utils.JwtUtil;
 

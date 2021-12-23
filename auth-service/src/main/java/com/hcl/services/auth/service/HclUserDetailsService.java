@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.hcl.services.auth.model.HclUserDetails;
-import com.hcl.services.auth.model.LoginUser;
-import com.hcl.services.auth.repo.LoginUserRepository;
+import com.hcl.services.auth.model.user.LoginUser;
+import com.hcl.services.auth.repo.user.LoginUserRepository;
 
 @Service
 public class HclUserDetailsService implements UserDetailsService{
