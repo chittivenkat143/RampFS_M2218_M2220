@@ -9,26 +9,26 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.hcl.services.auth.model.HclUserDetails;
-import com.hcl.services.auth.model.user.LoginUser;
-import com.hcl.services.auth.repo.user.LoginUserRepository;
+import com.hcl.services.auth.model.HclEmployeeDetails;
+import com.hcl.services.auth.model.employee.LoginEmployee;
+import com.hcl.services.auth.repo.employee.LoginEmployeeRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Qualifier("hclUserDetailsService")
+@Qualifier("hclEmployeeDetailsService")
 @Service
-public class HclUserDetailsService implements UserDetailsService{
+public class HclEmployeeDetailsService implements UserDetailsService{
 	
 	@Autowired
-	private LoginUserRepository repositoryLogin;
+	private LoginEmployeeRepository employeeRepository;
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		log.info("HUDS: loadUserByUsername(" + username + ")");
-		Optional<LoginUser> user = repositoryLogin.findByUsername(username);		
-		user.orElseThrow(()-> new UsernameNotFoundException("Not found " +username));		
-		return user.map(HclUserDetails::new).get();
+		log.info("HUDS: Employees Login by username: " + username);
+		Optional<LoginEmployee> employee = employeeRepository.findByUsername(username);
+		employee.orElseThrow(()-> new UsernameNotFoundException("Employee Not found " +username));
+		return employee.map(HclEmployeeDetails::new).get();
 	}
 
 }

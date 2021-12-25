@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EntityScan("com.hcl.services.auth.model")
 public class HclAuthServiceApplication {
 
 	public static void main(String[] args) {

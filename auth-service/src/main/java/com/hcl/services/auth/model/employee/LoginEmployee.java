@@ -32,10 +32,10 @@ public class LoginEmployee {
 	@Column(name = "roles")
 	private String roles;
 	
-	@Column(name = "email_id", unique = true)
+	@Column(name = "emailId", unique = true)
 	private String mailId;
 	
-	@Column(name = "phone_number", unique = true)
+	@Column(name = "phoneNumber", unique = true)
 	private String phoneNo;
 	
 }

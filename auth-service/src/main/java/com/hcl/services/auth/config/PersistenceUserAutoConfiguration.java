@@ -20,7 +20,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @PropertySource({"classpath:persistence-multiple-db-boot.properties"})
-@EnableJpaRepositories(basePackages = "com.hcl.services.auth.repo.user", entityManagerFactoryRef = "entityManagerFactory", transactionManagerRef = "userTransactionManager")
+@EnableJpaRepositories(basePackages = "com.hcl.services.auth.repo.user", entityManagerFactoryRef = "userEntityManager", transactionManagerRef = "userTransactionManager")
 public class PersistenceUserAutoConfiguration {
 
 	@Autowired
@@ -32,7 +32,7 @@ public class PersistenceUserAutoConfiguration {
 
 	@Primary
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+    public LocalContainerEntityManagerFactoryBean userEntityManager() {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(userDataSource());
         em.setPackagesToScan("com.hcl.services.auth.model.user");
@@ -58,7 +58,7 @@ public class PersistenceUserAutoConfiguration {
     @Bean
     public PlatformTransactionManager userTransactionManager() {
         final JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
+        transactionManager.setEntityManagerFactory(userEntityManager().getObject());
         return transactionManager;
     }
 }
