@@ -4,17 +4,20 @@ server:
 spring:
   application:
     name: hcl-api-gateway
+    
   cloud:
     gateway:
       discovery:
         locator:
-          enabled: true  security:    user:      name: user
+          enabled: true
+            security:    user:      name: user
       password: userpass123
 
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      
   instance:
     hostname: localhost
     #preferIpAddress: true
