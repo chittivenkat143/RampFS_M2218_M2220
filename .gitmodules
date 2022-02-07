@@ -1,0 +1,3 @@
+[submodule "ms-activity-service"]
+	path = ms-activity-service
+	url = https://github.com/chittivenkat143/ms-activity-service.git
