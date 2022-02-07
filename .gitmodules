@@ -1,3 +1,6 @@
 [submodule "ms-activity-service"]
 	path = ms-activity-service
 	url = https://github.com/chittivenkat143/ms-activity-service.git
+[submodule "employee-services"]
+	path = employee-services
+	url = https://github.com/chittivenkat143/employee-services.git
