@@ -4,3 +4,6 @@
 [submodule "employee-services"]
 	path = employee-services
 	url = https://github.com/chittivenkat143/employee-services.git
+[submodule "gateway-service"]
+	path = gateway-service
+	url = https://github.com/chittivenkat143/gateway-service.git
